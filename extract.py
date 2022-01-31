@@ -62,8 +62,8 @@ assoc = dict()
 
 def doRange(start, finish):
     #print("Current assoc size : %d" % len(assoc.keys()))
-    #print("Extracting %d pictures starting at %d."%(finish, start))
-    result = requests.post(startURL + portThing + SOAPInterface, data=getRangeReqString(start, finish), headers=headers)
+    print("Requesting metadata for %d pictures starting at index %d."%(finish, start))
+    result = requests.post(startURL + portThing + SOAPInterface, data=getRangeReqString(start, finish), headers=headers, timeout=20)
     #print(result.content)
     oldAssocSize = len(assoc.keys())
 

@@ -49,6 +49,12 @@ All the cameras's contents will be downloaded in a pictures folder, created in t
 
 Images and videos aren't differentiated yet. The only way to differentiate them at the moment is seeing the .JPG file's preview to be incorrect and realising its size doesn't really match with its supposed format.
 
+### Wi-Fi speed
+
+tl;dr: The wi-fi antenna on the Leica Q (at least the one I'm working with) seems to be quite weak. I'd recommend placing the camera close to the Wi-Fi access point or running a script on a laptop that is connected to the camera self-hosted Wi-Fi hotspot.
+
+After some time spent trying to understand why I was having a hard time testing the script on my desktop computer, I noticed that while my computer was connected using an Ethernet cable, the camera was quite far from the Wi-Fi hotspot. This problem didn't occur when I was testing on a laptop that was connected to the the self-hosted camera Wi-Fi hotspot. I figured this is is due to a "weak" Wi-Fi antenna / amplification circuit, but I could be wrong.
+
 ### Battery levels
 
 For reasons unknown accessing the camera's HTTP interfaces works way more reliably when using completely charged batteries. I've noticed requests going unanswered or loading times being extremely slow with low battery levels.

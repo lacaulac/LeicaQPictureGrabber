@@ -34,7 +34,7 @@ If you know the target IP address (which should be 192.168.54.1 on the self-host
 python extract.py TYPE.IP.ADDRESS.HERE
 ```
 
-If you're not quite sure what the camera's IP is, you can use an experimental (and badly implemented, if at all) network scanning feature :
+If you're not quite sure what the camera's IP is, you can use an experimental (and botched together) network scanning feature :
 ```bash
 python extract.py scan
 ```

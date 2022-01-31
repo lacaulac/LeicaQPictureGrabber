@@ -10,6 +10,8 @@ Please don't sue me <3
 
 # Compatibility
 
+tl;dr: This script might work with other Leica or Panasonic cameras since their software seems to be similar, but there's no solid evidence it will.
+
 While doing preliminary research, I noticed that the Leica Q shares a lot of software similarities (the http-based command interface being the main one) with other cameras such as Panasonic Lumix cameras (not quite sure about the exact names). I don't have access to any of those cameras so I can't test this out, but I'd really like to have feedback if this works or not!
 
 This might also work with other Leica cameras that are supported by their mobile app, but again, I can't really verify this.
@@ -23,7 +25,6 @@ This might also work with other Leica cameras that are supported by their mobile
 git clone https://github.com/lacaulac/LeicaQPictureGrabber.git
 cd LeicaQPictureGrabber
 # Install the requirements
-# This is not required if you already know the camera's IP address on your network
 pip install -r requirements.txt
 ```
 
@@ -47,7 +48,7 @@ All the cameras's contents will be downloaded in a pictures folder, created in t
 
 ### Videos
 
-Images and videos aren't differentiated yet. The only way to differentiate them at the moment is seeing the .JPG file's preview to be incorrect and realising its size doesn't really match with its supposed format.
+The script doesn't really understand the difference between JPEGs and video files (ie: this is more of a proof of concept than anything) and thus stores them all as .jpg files. The only way to differentiate them at the moment is seeing the .JPG file's preview to be incorrect and realising its size doesn't really match with its supposed format.
 
 ### Wi-Fi speed
 
